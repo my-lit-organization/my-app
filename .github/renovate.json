@@ -1,3 +1,13 @@
 {
-    "extends": ["config:base"]
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:base"],
+    "packageRules": [
+      {
+        "matchPackagePatterns": ["*"],
+        "enabled": true
+      }
+    ],
+    "npm": {
+      "enabled": true
+    },
 }
