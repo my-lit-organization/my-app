@@ -1,13 +1,12 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["config:base"],
     "packageRules": [
-      {
-        "matchPackagePatterns": ["*"],
-        "enabled": true
-      }
-    ],
-    "npm": {
-      "enabled": true
-    }
+        {
+          "matchManagers": ["npm"],
+          "matchUpdateTypes": ["minor", "patch"],
+          "enabled": true,
+          "automerge": false
+        }
+    ], 
+    "enabledManagers": ["npm"]
 }
