@@ -3,7 +3,10 @@
     "extends": [
        "config:recommended"
     ],
+    "onboarding": false,
+    "autodiscover": false,
     "prCreation": "immediate",
+    "prConcurrentLimit": 5, 
     "packageRules": [
       {
         "matchPackagePatterns": ["*"],
