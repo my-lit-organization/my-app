@@ -1,10 +1,9 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
     "extends": [
-       "config:recommended"
+        "github>renovatebot/.github",
+        "dependencyDashboard"
     ],
-    "onboarding": false,
-    "autodiscover": false,
     "prCreation": "immediate",
     "prConcurrentLimit": 5, 
     "packageRules": [
