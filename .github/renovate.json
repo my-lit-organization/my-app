@@ -1,21 +1,11 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "github>renovatebot/.github"
-  ],
-  "prCreation": "immediate",
-  "prConcurrentLimit": 5,
+  "automerge": false,
+  "labels": ["dependencies"],
   "packageRules": [
     {
-      "enabled": true,
-      "automerge": false,
-      "matchPackageNames": [
-        "*"
-      ]
+        "matchUpdateTypes": ["minor", "patch"],
+        "matchManagers": ["npm"]
     }
-  ],
-  "npm": {
-    "enabled": true,
-    "automerge": false
-  }
+  ]
 }
