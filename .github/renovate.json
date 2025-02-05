@@ -1,13 +1,15 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": false,
+  "autodiscover": true,
+  "prCreation": "immediate",
   "extends": [
     "config:base",
     ":disableDependencyDashboard"
     ],
   "packageRules": [
     {
-        "matchUpdateTypes": ["minor", "patch"],
+        "matchUpdateTypes": ["minor", "patch", "major"],
         "matchManagers": ["npm"]
     } 
   ]
