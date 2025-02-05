@@ -1,14 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": false,
-  "prCreation": "immediate",
   "baseBranches": ["main"],
   "extends": [
-    "config:base"
+    "config:recommended"
     ],
   "packageRules": [
     {
-        "matchUpdateTypes": ["minor", "patch", "major"],
         "matchManagers": ["npm"]
     } 
   ]
