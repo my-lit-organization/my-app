@@ -1,11 +1,12 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": false,
-  "baseBranches": ["main"],
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard"
     ],
+  "useBaseBranchConfig": "merge",
+  "baseBranches": ["feat/renovate"],
   "packageRules": [
     {
         "matchManagers": ["npm"]
