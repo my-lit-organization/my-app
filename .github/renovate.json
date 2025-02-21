@@ -9,7 +9,13 @@
   "baseBranches": ["feat/renovate"],
   "packageRules": [
     {
-        "matchManagers": ["npm"]
-    } 
-  ]
+        "matchDepNames": ["express"], 
+        "enabled": true
+    }
+  ], 
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": false,
+    "enabled": true
+  }
 }
