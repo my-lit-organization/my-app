@@ -1,7 +1,6 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "automerge": false,
-  "baseBranches": ["main"],
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard"
@@ -9,7 +8,12 @@
   "packageRules": [
     {
         "matchDepNames": ["express"], 
-        "enabled": false
-    } 
-  ]
+        "enabled": true
+    }
+  ], 
+  "vulnerabilityAlerts": {
+    "labels": ["security"],
+    "automerge": false,
+    "enabled": true
+  }
 }
