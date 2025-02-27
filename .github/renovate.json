@@ -12,5 +12,5 @@
       "groupName": "Npm minor/patch updates"
     }
   ],
-  "separateMajorMinor": true
+  "separateMajorMinor": false
 }
