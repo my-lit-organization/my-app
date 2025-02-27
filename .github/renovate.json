@@ -7,13 +7,9 @@
     ],
   "packageRules": [
     {
-        "matchDepNames": ["express"], 
-        "enabled": true
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "Npm minor/patch updates"
     }
-  ], 
-  "vulnerabilityAlerts": {
-    "labels": ["security"],
-    "automerge": false,
-    "enabled": true
-  }
+  ]
 }
