@@ -11,12 +11,15 @@
     {
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "Npm minor/patch updates"
+      "groupName": "Npm minor/patch updates",
+      "labels": ["minor/patch {{manager}}"]
     },
     {
+      "description": "Do not group major updates",
       "matchManagers": ["npm"],
       "matchUpdateTypes": ["major"],
-      "groupName": null
+      "groupName": null,
+      "labels": ["major {{manager}}"]
     }
   ]
 }
