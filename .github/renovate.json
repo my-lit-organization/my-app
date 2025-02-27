@@ -11,5 +11,6 @@
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "Npm minor/patch updates"
     }
-  ]
+  ],
+  "separateMajorMinor": true
 }
