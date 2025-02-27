@@ -4,9 +4,7 @@
   "extends": [
     "config:recommended",
     ":disableDependencyDashboard"
-    ],
-  "useBaseBranchConfig": "merge",
-  "baseBranches": ["feat/renovate"],
+  ],
   "packageRules": [
     {
       "matchManagers": ["npm"],
