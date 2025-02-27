@@ -9,14 +9,17 @@
   "prConcurrentLimit": 0,
   "packageRules": [
     {
-      "matchManagers": ["npm"],
+      "matchManagers": ["npm", "docker"],
       "matchUpdateTypes": ["minor", "patch"],
-      "groupName": "Npm minor/patch updates"
+      "groupName": "minor/patch updates",
+      "labels": ["minor/patch {{manager}}"]
     },
     {
-      "matchManagers": ["npm"],
+      "description": "Do not group major updates",
+      "matchManagers": ["npm", "docker"],
       "matchUpdateTypes": ["major"],
-      "groupName": null
+      "groupName": null,
+      "labels": ["major {{manager}}"]
     }
   ]
 }
